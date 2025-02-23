@@ -165,3 +165,17 @@ h4{
   flex: 1,0,auto;
   align-self: flex-end;
 }
+
+/* Blog pages */
+.blog_text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 225%;
+  max-width: 600px;
+}
+
+#blog_heading {
+  font-weight: bolder;
+  font-size: 24px;
+}

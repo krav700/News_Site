@@ -173,6 +173,18 @@ h4{
   align-items: center;
   line-height: 225%;
   max-width: 600px;
+  color: black;
+}
+
+.messageGoBack {
+  margin-right: 0;
+}
+
+#messagePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #blog_heading {

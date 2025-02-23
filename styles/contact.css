@@ -1,0 +1,71 @@
+.form {
+    display: flex;
+    flex: 1;
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+}
+
+.form_image {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+
+input, textarea{
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(210, 225, 255);
+    width: 300px;
+    height: 40px;
+    text-indent: 5px;
+}
+textarea {
+    height: 100px;
+    resize: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contactUsH1 {
+    color: rgb(27, 25, 25);
+    margin-right: 0;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(23, 62, 142);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.contactButton span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.contactButton span:after {
+    content: "→";
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.contactButton:hover span {
+    padding-right: 25px;
+}
+.contactButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}

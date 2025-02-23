@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>About Us</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="../scripts/main.js" defer></script>
+    <title>Contact Us</title>
 </head>
 <body>
     <div class="header">
@@ -18,22 +20,34 @@
     </div>
 
     <div class="content">
-    <p class="blog_text"> <span id="blog_heading"> За нас – BG NEWS </span><br><br>
-        Добре дошли в <strong> BG NEWS </strong>– вашият надежден източник на актуални новини от България и света. Нашата мисия е да ви предоставяме бърза, достоверна и обективна информация по най-важните теми от политиката, икономиката, технологиите, културата и спорта. Вярваме, че информираният човек е силен човек, затова се стремим да ви предложим новините, които наистина имат значение. <br>
-        Екипът ни се състои от професионални журналисти и анализатори, които следят събитията в реално време и подготвят задълбочени репортажи и коментари. Разчитаме на проверени източници и винаги подхождаме с критично мислене, за да ви представим най-достоверната картина на случващото се. <br>
-        В <strong>BG NEWS</strong> вярваме, че медиите трябва да бъдат прозрачни, достъпни и безпристрастни. Нашата цел е не само да информираме, но и да предизвикваме конструктивни дискусии по важни обществени въпроси. Ако искате да сте винаги в крак със събитията, останете с нас – защото новините са важни!</p>
+        <form>
+            <div class="form">
+                <div class="form_content">
+                    <h1 id="contactUsH1">Contact us</h1>
+                    <input placeholder="Name" type="text" name="contactName" id="form_name">
+                    <input placeholder="Email" type="email" name="contactEmail" id="form_email">
+                    <textarea placeholder="Message" name="contactMessage" id="form_message" class="input_message"></textarea>
+                    <button class="contactButton" id="contactButtonName"><span>Send Message! </span></button>
+                </div>
+                <div class="form_image">
+                    <img src="../images/BGNews.svg" alt="BG NEWS logo">
+                </div>
+            </div>
+        </form>
     </div>
+
+
     <div class="all_footers">
         <div class="before_footer">
             <p id="before_footer_text"><small>Всички текстове публикувани в News.bg са собственост на "Уеб Медия Груп" АД и са под закрила на "Закона за авторското право и сродните му права". Всички снимки и видеа са собственост на "Уеб Медия Груп" АД, разпространяват се с лиценз, който позволява свободното им ползване или се използват на база лицензионни договори. Съдържанието, включително текстове, снимки и видео не могат да бъдат използвани и копирани без изричното писмено разрешение на "Уеб Медия Груп" АД, включително с цел агрегиране на съдържанието и сходни услуги.
             </small></p>
             <p id="before_footer_copyright">©BG NEWS 2025 BG NEWS НЕ Е РЕГИСТРИРАНА ТЪРГОВСКА МАРКА. НЯМА ЗАПАЗЕНИ ПРАВА.</p>
-            <img src="images/webMediaGroupLogo.png" alt="webMediaGroupLogo" id="wMGlogo">
+            <img src="../images/webMediaGroupLogo.png" alt="webMediaGroupLogo" id="wMGlogo">
         </div>
         <div class="footer">
                 <div class="footer_left">
-                    <a href="#">ЗА НАС</a>
-                    <a href="#">КОНТАКТИ</a>
+                    <a href="aboutUs.html">ЗА НАС</a>
+                    <a href="contactUs.html">КОНТАКТИ</a>
                     <a href="#">ОБЩИ УСЛОВИЯ</a>
                 </div>
                 <div class="footer_center">
@@ -46,7 +60,5 @@
                 </div>
         </div>
     </div>
-
-
 </body>
 </html>

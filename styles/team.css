@@ -1,0 +1,24 @@
+img {
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.socials_image {
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#instagram {
+    border-radius: 0;
+}

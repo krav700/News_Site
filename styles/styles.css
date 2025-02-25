@@ -18,13 +18,57 @@ html, body {
     flex-direction: column;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgb(114, 157, 244);
+  padding: 0px 100px;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+a{
+  position: relative;
+}
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3ms, transform 300ms;
+}
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.header_links a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.header_links a:hover::after,
+.header_links a:focus::after {
+  transform: scale(1);
+}
+
+
+
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
     background-color: rgb(114, 157, 244);
-    padding: 0px 80px;
+    padding: 0px 150px;
     flex-shrink: 0;
 }
 
@@ -41,6 +85,7 @@ h1, #footer_h1{
 a {
     text-decoration: none;
     color: white;
+    transition: all 0.5s;
 }
 
   .content {

@@ -1,6 +1,6 @@
 .form {
     display: flex;
-    flex: 1;
+    flex: 0 1 auto;
 }
 
 .form_content {
@@ -68,4 +68,8 @@ button {
 .contactButton:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+#form_name {
+    flex: 0, 1, auto;
 }

@@ -90,11 +90,21 @@ a {
 
   .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 50px;
     padding: 30px;
     flex: 1;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: center;
+  }
+
+  video {
+    margin: 20px;
   }
 
   .card_link {

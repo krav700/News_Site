@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="images/logoFavicon.png">
+    <script src="scripts/main.js" defer></script>
     <title>Bg News</title>
 </head>
 <body>
@@ -22,7 +23,29 @@
         <div class="columns">
             <div class="column1">
 
-                    <img class="hero_image" src="images/mainImage.jpg" alt="Zelenski">
+                <div class="slideshow_container">
+
+                    <div class="image_shadow"></div>
+
+                    <div class="mySlides fade">
+                        <img class="slideshow_image" src="images/kirilDobrev.jpg" alt="Кирил Добрев">
+                        <div class="image_text">Кирил Добрев: България няма нужда от нови избори</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="slideshow_image" src="images/chervenoEvro.jpg" alt="Кирил Петков">
+                        <div class="image_text">Сарафов иска 5 имунитета на хулигани от "Възраждане"</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="slideshow_image" src="images/ruskiZaEvro.jpg" alt="Пеевски">
+                        <div class="image_text">С руското знаме бранят независимостта на лева</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
 
             <div class="cards">
                 <div class="card">

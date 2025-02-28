@@ -73,10 +73,78 @@ a:focus::after {
 }
 
 .hero_image{
-  
   padding-bottom: 30px;
   flex: 1;
 }
+
+/* Slideshow */
+
+.slideshow_container {
+  max-width: 768px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow_image {
+  width: 768px;
+  height: 432px;
+}
+.mySlides::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(transparent,black);
+  height: 60%;
+  width: 100%;
+  left: 50%;
+  top: 69%;
+  translate: -50% -50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bebas+Neue&family=Merriweather:wght@700&family=Lora:wght@700&family=Oswald:wght@700&display=swap');
+
+.image_text {
+  color: #f2f2f2;
+  font-family: 'Playfair Display', serif;;
+  font-size: 25px;
+  padding: 8px 12 px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+  z-index: 2;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6 ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
+/*  */
 
 h1, #footer_h1{
   margin-right: auto;

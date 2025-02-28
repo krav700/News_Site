@@ -63,40 +63,42 @@ a:focus::after {
 
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    background-color: rgb(114, 157, 244);
-    padding: 0px 150px;
-    flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgb(114, 157, 244);
+  padding: 0px 150px;
+  flex-shrink: 0;
 }
 
 .hero_image{
-    padding-bottom: 30px;
+  
+  padding-bottom: 30px;
+  flex: 1;
 }
 
 h1, #footer_h1{
-    margin-right: auto;
-    color: white;
-    padding: 0px 160px;
+  margin-right: auto;
+  color: white;
+  padding: 0px 160px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
 }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding: 30px;
-    flex: 1;
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding: 30px;
+  flex: 1;
+}
 
   .columns {
     display: flex;
@@ -105,7 +107,34 @@ a {
 
   video {
     margin: 20px;
+    margin-top: 0;
+    flex: 1;
   }
+
+#aroundTheVideo {
+  position: relative;
+  margin-top: 20px;
+  background-color: rgb(92, 92, 204);
+  animation-name: aroundTheVideoAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.aroundTheVideoHeight {
+  height: 50px;
+}
+
+@keyframes aroundTheVideoAnimation {
+  0% {background-color: rgb(92, 92, 204); left: -380px; top: 0px; width: 10px; height: 10px;}
+  12.5% {width: 50px;}
+  25%  {background-color: rgb(73, 73, 211); left: 380px; top: 0px; width: 10px; height: 10px;}
+  37.5% {height: 50px;}
+  50%  {background-color: rgb(92, 92, 204); left: 380px; top: 440px; width: 10px; height: 10px;}
+  62.5% {width: 50px;}
+  75%  {background-color: rgb(56, 56, 220); left: -380px; top: 440px; width: 10px; height: 10px;}
+  87.5% {height: 50px;}
+  100% {background-color: rgb(92, 92, 204); left: -380px; top: 0px; width: 10px; height: 10px;}
+}
 
   .card_link {
     color: rgb(113, 124, 174);

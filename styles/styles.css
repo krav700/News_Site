@@ -349,6 +349,7 @@ h4{
 /* footer */
 .footer {
   background-color: rgb(43, 62, 99);
+  width: 100%;
   display: flex;
   gap: 5rem;
   justify-content: center;

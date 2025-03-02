@@ -14,3 +14,8 @@ window.onscroll = function () {
 
     prevScrollPos = currentScrollPos;
 }
+
+function leave() {
+    console.log("HELLO?");
+    window.open("https://news.bg/","_blank");
+}

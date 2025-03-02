@@ -50,6 +50,13 @@ a::after {
   opacity: 0;
   transition: opacity 0.3ms, transform 300ms;
 }
+.cards a::after {
+  background-color: rgb(83, 83, 198);
+}
+.card3 a::after {
+  background-color: rgb(83, 83, 198);;
+}
+
 a:hover::after,
 a:focus::after {
   opacity: 1;
